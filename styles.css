@@ -65,17 +65,41 @@ body {
     top: 50%;
 }
 
-/* ex 1.1 stuff */
+/* ex1.1 stuff i added */
 .background .slide-left{
-    animation: slide-left 2s infinite linear;
+    animation: slide-left 60s infinite linear; /* infinite */
 }
 
 @keyframes slide-left {
     from {
-        transform: translate(0px);
+        transform: translate(0%);
     }
     to {
-        transform: translate(-1500px);
+        transform: translate(-80%);
+    }
+}
+
+/* ex1.2 stuff i added */
+.ex12 {
+    animation: ex12 0.3s infinite linear;
+}
+
+@keyframes ex12 {
+    0% {
+        transform: translateY(10px);
+        
+    }
+    33.3% {
+        transform: translateY(-20px);
+   
+    }
+    66.6% {
+        transform: translateY(20px);
+   
+    }
+    100% {
+        transform: translateY(0px);
+
     }
 }
 
