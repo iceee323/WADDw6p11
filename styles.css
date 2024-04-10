@@ -65,6 +65,20 @@ body {
     top: 50%;
 }
 
+/* ex 1.1 stuff */
+.background .slide-left{
+    animation: slide-left 2s infinite linear;
+}
+
+@keyframes slide-left {
+    from {
+        transform: translate(0px);
+    }
+    to {
+        transform: translate(-1500px);
+    }
+}
+
 /** Exercise 1.3 - add animation property **/
 .helicopter {
     font-size: 3em;
