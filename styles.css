@@ -2,7 +2,7 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #333;
-    padding:24px;
+    padding: 24px;
 }
 
 .window {
@@ -17,9 +17,9 @@ body {
     width: 200%;
     height: 300px;
     background-color: skyblue;
-    position:absolute;
-    left:0%;
-    top:0%;
+    position: absolute;
+    left: 0%;
+    top: 0%;
 }
 
 .trees {
@@ -42,12 +42,12 @@ body {
 .clouds {
     display: flex;
     justify-content: space-around;
-    width:100%;
+    width: 100%;
 }
 
 .cloud {
     color: white;
-    font-size:3em;
+    font-size: 3em;
     margin-top: 1em;
 }
 
@@ -66,14 +66,16 @@ body {
 }
 
 /* ex1.1 stuff i added */
-.background .slide-left{
-    animation: slide-left 60s infinite linear; /* infinite */
+.background .slide-left {
+    animation: slide-left 60s infinite linear;
+    /* infinite */
 }
 
 @keyframes slide-left {
     from {
         transform: translate(0%);
     }
+
     to {
         transform: translate(-80%);
     }
@@ -87,16 +89,19 @@ body {
 @keyframes ex12 {
     0% {
         transform: translateY(10px);
-        
+
     }
+
     33.3% {
         transform: translateY(-20px);
-   
+
     }
+
     66.6% {
         transform: translateY(20px);
-   
+
     }
+
     100% {
         transform: translateY(0px);
 
@@ -110,13 +115,29 @@ body {
     position: absolute;
     left: 50%;
     bottom: 0%;
+    animation: helicopter 5s infinite linear;
+}
+
+@keyframes helicopter {
+    0% {
+        transform: translate(-350px,0px);
+    }
+    25% {
+        transform: translate(-350px,-200px);
+    }
+    75% {
+        transform: translate(280px,-200px);
+    }
+    100% {
+        transform: translate(280px,0px);
+    }
 }
 
 /** Exercise 1.4 - add animation properties to each of the following classes (see guidance) **/
 .sun-container {
     width: 500px;
     height: 100%;
-    margin:auto;
+    margin: auto;
     transform-origin: center bottom;
 }
 
@@ -131,7 +152,7 @@ body {
 .moon {
     color: white;
     font-size: 3em;
-    position:absolute;
-    left:100%;
-    bottom:0%;
+    position: absolute;
+    left: 100%;
+    bottom: 0%;
 }
